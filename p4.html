@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Ensures cells collapse properly */
+        }
+        th, td {
+            border: 1px solid black; /* Invisible borders */
+            padding: 10px; /* Adds padding for readability */
+            text-align: left;
+        }
+        th {
+            font-size: 24px; /* Larger font size for the header */
+            font-weight: bold; /* Bold font for emphasis */
+        }
+        .no-border {
+            border: none;
+        }
+        .right {
+            text-align: right;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        i{
+          border: none;
+        }
+.i th, .i td {
+    border: none; /* Removes borders from table cells */
+  }
+    </style>
+</head>
+
+<body>
+  <table class="i" style="width: 100%; border-collapse: collapse;">
+    <tr>
+        <th colspan="5">RedmineCRM</th>
+    </tr>
+    <tr>
+        <td style="padding: 0;">Company representative name</td>
+        <td colspan="6"></td>
+    </tr>
+    <tr>
+        <td style="padding: 0;">Your company address</td>
+        <td colspan="15"></td>
+        <td style="text-align: right; padding: 0;">Invoice Id:</td>
+        <td style="padding: 0; text-align: right;">INV/20111209-22</td>
+    </tr>
+    <tr>
+        <td style="padding: 0;">Tax ID</td>
+        <td colspan="15" style="text-align: right;"></td>
+        <td style="padding: 0; text-align: right;">Invoice date:</td>
+        <td style="padding: 0; text-align: right;">12/08/2011</td>
+    </tr>
+    <tr>
+        <td style="padding: 0;">Phone</td>
+        <td colspan="15" style="text-align: right;"></td>
+        <td style="text-align: right; padding: 0;">Text custom field:</td>
+        <td style="padding: 0; text-align: right;">Visible field in PDF</td>
+    </tr>
+    <tr>
+        <td style="padding: 0;">Fax</td>
+        <td colspan="4" style="text-align: right; padding: 0;"></td>
+      </td>
+    </tr>  
+    <tr>
+      <td colspan="6"></td>
+      <td colspan="7"></td>
+      <td colspan="5" style="text-align: right; padding: 0;">
+          <div style="text-align: right;">
+        Bill to:"Romashka" Ltd.<br>
+                       1600 Amphitheatre Parkway<br>
+                       Mountain View, CA 94043
+          </div>
+      </td>
+  </tr>
+  
+</table>
+
+  
+  <br>
+  
+  <table border="1">
+    <tr>
+        <th>#</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Units</th>
+        <th>Unit Price(EUR)</th>
+        <th>Total(EUR)</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td style="text-align: left;">Projecting
+            
+                <p style="text-align: left;">-Context menu for invoices list</p>
+            
+        </td>
+        <td>x1.0</td>
+        <td>hours</td>
+        <td style="text-align: right;">50.00</td>
+        <td style="text-align: right;">50.00</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td rowspan="1">Develop
+            
+                <p style="text-align: left;">-Invoice number of format template</p>
+                <p style="text-align: left;">-[PRO] Duplicating invoices</p>
+                <p style="text-align: left;">-Language support</p>
+                <p style="text-align: left;">-Context menu for invoices list</p>
+         
+        </td>
+        <td>x17.0</td>
+        <td>hours</td>
+        <td style="text-align: right;">40.00</td>
+        <td style="text-align: right;">680.00</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td rowspan="1">Analysis
+                <p style="text-align: left;">-[PRO] Duplicating invoices</p>
+                <p style="text-align: left;">-Language support</p>
+  
+        </td>
+        <td>x3.0</td>
+        <td>hours</td>
+        <td style="text-align: right;">35.00</td>
+        <td style="text-align: right;">105.00</td>
+    </tr>
+</table>
+<br>
+
+
+  <table border="0" style="width: 100%; text-align: right; border-collapse: collapse;">
+  <tr>
+      <td style="text-align: right; border: none;" colspan="11">
+          <b>Sub total:</b> 835.00<br>
+          <b>Tax (28.0%):</b> 150.30<br>
+          <b>Discount (10.0%):</b> -83.50<br>
+          <b>Total (EUR):</b> 901.80
+      </td>
+  </tr>
+ 
+
+</table>
+<table border="0" style="width: 100%; text-align: right; border-collapse: collapse;">
+<tr>
+  <td style="text-align: left; border: none;" colspan="11">
+    Your billing information (Bank, Address, IBAN, SWIFT, etc.)<br>
+    ist mit Beschreibung  
+  </td>
+</tr>
+</tr>
+
+</table>
+
+
+  
+
+  
+  </body>
+  </html>
+
+

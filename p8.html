@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Receipt Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 2px solid #000;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .billing-table, .re {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .billing-table th, .billing-table td, 
+        .re th, .re td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .billing-table th:nth-child(3) {
+            width: 40%;
+        }
+        th {
+            background-color: #f2f2f2; /* Light gray background for headers */
+        }
+        .company-info, .bill-to {
+            
+            border-collapse: collapse;
+            
+        }
+        
+        hr {
+            border: 1px solid black;
+        }
+        .re th:nth-child(2), .re td:nth-child(2) {
+        width: 21%; /* Adjust this value as needed */
+    }
+    </style>
+</head>
+<body>
+
+
+    <table class="company-info">
+        <tr>
+            <th style="text-align: left;">Company Name</th>
+        </tr>
+        <tr>
+            <td>Address</td>
+        </tr>
+        <tr>
+            <td>City, State ZIP</td>
+        </tr>
+        <tr>
+            <td>Phone Fax</td>
+        </tr>
+        <tr>
+            <td>Email, Website, Company #</td> 
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="bill-to">
+        <tr>
+            <th colspan="2" style="text-align: right;">Bill To:</th>
+            <td style="text-align: right;">(#)</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+        </tr>
+        <tr>
+            <td>City, ST ZIP</td>
+        </tr>
+        <tr>
+            <td>Country</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+        </tr>
+    </table>
+
+    <table class="billing-table">
+        <tr>
+            <th>Start Date</th>
+            <th>Finish Date</th>
+            <th>Job Address</th>
+            <th>Client Name</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="re">
+        <tr>
+            <th>Item ID</th>
+            <th>Description</th>
+           <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Line Total</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+                <td style="text-align: right; border: none;">SUBTOTAL</td>
+            <td></td>
+        
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+                <td style="text-align: right; border: none;">EXTRAS</td>
+            <td></td>
+        
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+                <td style="text-align: right; font-weight: bold; border: none;">TOTAL</td>
+            <td></td>
+        
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+                <td style="text-align: right; font-weight: bold; border: none;">PAID</td>
+            <td></td>
+        
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+                <td style="text-align: right; font-weight: bold; border: none;">TOTAL DUE</td>
+            <td></td>
+        
+        </tr>
+       <br>
+    </table>
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td style="border: 1px solid gainsboro; text-align: center; padding: 10px; background-color: gainsboro;">
+                THANK YOU FOR YOUR BUSINESS
+            </td>     
+        </tr>
+    </table>
+    
+</body>
+</html>
