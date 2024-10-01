@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Graphic in Canvas</title>
+    <style>
+        canvas {
+            border: 1px solid black; /* Optional for visibility */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw Background (Sky)
+        ctx.fillStyle = 'darkblue';
+        ctx.fillRect(0, 0, 500, 300);
+
+        // Draw Road
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 200, 500, 50);
+
+        // Draw Clouds
+        function drawCloud(cx, cy, rx, ry) {
+            ctx.beginPath();
+            ctx.ellipse(cx, cy, rx, ry, 0, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+        }
+        drawCloud(70, 50, 30, 20);
+        drawCloud(100, 60, 30, 20);
+        drawCloud(130, 50, 30, 20);
+
+        // Draw Bus Body
+        ctx.fillStyle = 'lightgrey';
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 2;
+        ctx.fillRect(50, 120, 300, 60);
+        ctx.strokeRect(50, 120, 300, 60);
+
+        // Draw Upper Orange Section of Bus
+        ctx.fillStyle = 'orange';
+        ctx.fillRect(50, 110, 300, 40);
+
+        // Draw Bus Windows
+        ctx.fillStyle = 'black';
+        ctx.fillRect(60, 110, 50, 30); // Driver's window
+        ctx.fillStyle = 'white';
+        ctx.fillRect(120, 110, 30, 30); // Passenger windows
+        ctx.fillRect(160, 110, 30, 30);
+        ctx.fillRect(200, 110, 30, 30);
+        ctx.fillRect(240, 110, 30, 30);
+        ctx.fillRect(280, 110, 30, 30);
+
+        // Draw Wheels
+        function drawWheel(cx, cy) {
+            ctx.fillStyle = 'black';
+            ctx.beginPath();
+            ctx.arc(cx, cy, 15, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 2;
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(cx, cy, 10, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(cx, cy, 5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.stroke();
+        }
+        drawWheel(70, 190); // Front wheel
+        drawWheel(330, 190); // Rear wheel
+
+        // Draw Traffic Light
+        ctx.fillStyle = 'black';
+        ctx.fillRect(400, 120, 10, 80); // Traffic light post
+
+        ctx.fillStyle = 'red';
+        ctx.beginPath();
+        ctx.arc(405, 130, 8, 0, Math.PI * 2);
+        ctx.fill(); // Red light
+    </script>
+</body>
+</html>

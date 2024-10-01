@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Version</title>
+    <style>
+        body {
+            background-color: rgb(39, 37, 37);
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="1400" height="1000"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Grey horizontal rectangle
+        ctx.fillStyle = 'grey';
+        ctx.fillRect(0, 600, 10000, 70);
+
+        // Grey vertical rectangle
+        ctx.fillStyle = 'grey';
+        ctx.fillRect(60, 90, 20, 510);
+
+        // Black vertical rectangle
+        ctx.fillStyle = 'black';
+        ctx.fillRect(40, 0, 70, 320);
+
+        // Red circle
+        ctx.beginPath();
+        ctx.arc(75, 55, 40, 0, Math.PI * 2);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.closePath();
+
+        // Yellow circle
+        ctx.beginPath();
+        ctx.arc(75, 155, 40, 0, Math.PI * 2);
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+        ctx.closePath();
+
+        // Green circle
+        ctx.beginPath();
+        ctx.arc(75, 250, 40, 0, Math.PI * 2);
+        ctx.fillStyle = 'green';
+        ctx.fill();
+        ctx.closePath();
+
+        // Large yellow circle
+        ctx.beginPath();
+        ctx.arc(235, 155, 100, 0, Math.PI * 2);
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+        ctx.closePath();
+
+        // Black circle inside yellow circle
+        ctx.beginPath();
+        ctx.arc(270, 150, 80, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+        // Pink rectangle
+        ctx.fillStyle = 'pink';
+        ctx.fillRect(180, 370, 480, 170);
+
+        // Small black rectangle inside pink
+        ctx.fillStyle = 'black';
+        ctx.fillRect(179, 425, 30, 30);
+
+        // Yellow circle inside pink
+        ctx.beginPath();
+        ctx.arc(180, 442, 15, 0, Math.PI * 2);
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+        ctx.closePath();
+
+        // Large circle (bottom left)
+        ctx.beginPath();
+        ctx.arc(270, 540, 60, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+        // Small white circle inside large circle
+        ctx.beginPath();
+        ctx.arc(270, 540, 20, 0, Math.PI * 2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.closePath();
+
+        // Pink rectangle (bottom left)
+        ctx.fillStyle = 'pink';
+        ctx.fillRect(360, 170, 300, 200);
+
+        // Large purple rectangle
+        ctx.fillStyle = 'purple';
+        ctx.fillRect(655, 170, 620, 370);
+
+        // White rectangle inside purple
+        ctx.fillStyle = 'white';
+        ctx.fillRect(420, 199, 200, 120);
+
+        // Purple rectangle with pink stroke (right side)
+        function drawRectWithStroke(x, y) {
+            ctx.fillStyle = 'purple';
+            ctx.fillRect(x, y, 120, 210);
+            ctx.lineWidth = 9;
+            ctx.strokeStyle = 'pink';
+            ctx.strokeRect(x, y, 120, 210);
+        }
+
+        drawRectWithStroke(680, 199);
+        drawRectWithStroke(840, 199);
+        drawRectWithStroke(990, 199);
+        drawRectWithStroke(1140, 199);
+
+        // Large black circle (bottom left)
+        ctx.beginPath();
+        ctx.arc(750, 540, 60, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+        // Small white circle inside black
+        ctx.beginPath();
+        ctx.arc(750, 540, 20, 0, Math.PI * 2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.closePath();
+
+      
+        ctx.beginPath();
+        ctx.arc(1170, 540, 60, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+       
+        ctx.beginPath();
+        ctx.arc(1170, 540, 20, 0, Math.PI * 2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.closePath();
+    </script>
+</body>
+</html>

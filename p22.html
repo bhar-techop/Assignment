@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        canvas {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <canvas id="myCanvas" width="500" height="270"></canvas>
+    </center>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+      
+        ctx.beginPath();
+        ctx.arc(250, 100, 80, 0, 2 * Math.PI);
+        ctx.fillStyle = "orange";
+        ctx.fill();
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+
+      
+        ctx.beginPath();
+        ctx.arc(205, 100, 36, 0, 2 * Math.PI); 
+        ctx.fillStyle = "white";
+        ctx.fill();
+        ctx.stroke();
+
+   
+        ctx.beginPath();
+        ctx.arc(296, 100, 36, 0, 2 * Math.PI); 
+        ctx.fillStyle = "white";
+        ctx.fill();
+        ctx.stroke();
+
+        
+        ctx.beginPath();
+        ctx.arc(198, 100, 10, 0, 2 * Math.PI); 
+        ctx.fillStyle = "skyblue";
+        ctx.fill();
+        ctx.stroke();
+
+     
+        ctx.beginPath();
+        ctx.arc(295, 100, 10, 0, 2 * Math.PI);
+        ctx.fillStyle = "skyblue";
+        ctx.fill();
+        ctx.stroke();
+
+        
+        ctx.beginPath();
+        ctx.ellipse(270, 250, 130, 70, 0, 0, 2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>

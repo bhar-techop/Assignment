@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Conversion</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+      
+        ctx.beginPath();
+        ctx.moveTo(25, 50);
+        ctx.lineTo(175, 50);
+        ctx.lineTo(175, 380);
+        ctx.lineTo(25, 380);
+        ctx.closePath();
+        ctx.fillStyle = "white";
+        ctx.fill();
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "#202020";
+        ctx.stroke();
+
+        
+        ctx.beginPath();
+        ctx.moveTo(75, 25);
+        ctx.lineTo(125, 25);
+        ctx.lineTo(125, 35);
+        ctx.lineTo(75, 35);
+        ctx.closePath();
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+       
+        ctx.beginPath();
+        ctx.moveTo(25, 50);
+        ctx.lineTo(175, 50);
+        ctx.lineTo(175, 380);
+        ctx.lineTo(25, 380);
+        ctx.closePath();
+        ctx.fillStyle = "#D6EAF8";
+        ctx.fill();
+
+   
+        function drawRectangles(x, y, width, height, fillColor) {
+            ctx.fillStyle = fillColor;
+            ctx.fillRect(x, y, width, height);
+        }
+
+        const greyColor = "#CACFD2";
+        const darkGreyColor = "#34495E";
+
+        // Draw grey and dark grey rectangles
+        drawRectangles(50, 60, 25, 25, greyColor);
+        drawRectangles(85, 60, 25, 25, greyColor);
+        drawRectangles(120, 60, 25, 25, greyColor);
+
+        drawRectangles(50, 95, 25, 25, greyColor);
+        drawRectangles(85, 95, 25, 25, greyColor);
+        drawRectangles(120, 95, 25, 25, greyColor);
+
+        drawRectangles(50, 130, 25, 25, darkGreyColor);
+        drawRectangles(85, 130, 25, 25, greyColor);
+        drawRectangles(120, 130, 25, 25, greyColor);
+
+        drawRectangles(50, 165, 25, 25, greyColor);
+        drawRectangles(85, 165, 25, 25, darkGreyColor);
+        drawRectangles(120, 165, 25, 25, greyColor);
+
+        drawRectangles(50, 200, 25, 25, greyColor);
+        drawRectangles(85, 200, 25, 25, greyColor);
+        drawRectangles(120, 200, 25, 25, greyColor);
+
+     
+        function drawCircle(cx, cy, radius, fillColor) {
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+            ctx.fillStyle = fillColor;
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        drawCircle(75, 135, 4, "#5DADE2");
+        drawCircle(110, 170, 4, "#5DADE2");
+        drawCircle(100, 180, 4, "#EC7063");
+
+    </script>
+</body>
+</html>

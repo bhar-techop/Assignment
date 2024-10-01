@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="300"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+      
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 200, 600, 50);
+
+     
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 60, 250, 100);
+
+       
+        ctx.beginPath();
+        ctx.arc(80, 160, 25, 0, 2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(80, 163, 20, 0, 2 * Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+   
+        ctx.beginPath();
+        ctx.arc(280, 160, 25, 0, 2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+      
+        ctx.beginPath();
+        ctx.arc(280, 163, 20, 0, 2 * Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+     
+        ctx.fillStyle = "black";
+        ctx.fillRect(300, 80, 80, 80);
+
+       
+        ctx.fillStyle = "lightgray";
+        ctx.fillRect(335, 90, 40, 20);
+
+        ctx.fillStyle = "orange";
+        ctx.fillRect(550, 80, 40, 40);
+
+        
+        ctx.beginPath();
+        ctx.arc(340, 160, 25, 0, 2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+     
+        ctx.beginPath();
+        ctx.arc(340, 160, 20, 0, 2 * Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+       
+        ctx.fillStyle = "black";
+        ctx.fillRect(555, 120, 30, 80);
+
+    </script>
+</body>
+</html>

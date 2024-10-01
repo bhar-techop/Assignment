@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Bus (Canvas)</title>
+    <style>
+        body {
+            background-color: lightblue; /* Background color */
+        }
+        canvas{
+            border: 1px solid black;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <canvas id="busCanvas" width="11500" height="11400"></canvas>
+
+    <script>
+        const canvas = document.getElementById('busCanvas');
+        const ctx = canvas.getContext('2d');
+
+       
+        ctx.fillStyle = 'pink';
+        ctx.fillRect(50, 150, 380, 100); 
+        ctx.fillRect(3, 190, 200, 60);  
+
+      
+        ctx.fillStyle = 'white';
+        ctx.fillRect(70, 160, 50, 30);  
+        ctx.fillRect(130, 160, 50, 30);  
+        ctx.fillRect(190, 160, 50, 30); 
+        ctx.fillRect(250, 160, 50, 30); 
+        ctx.fillRect(350, 160, 50, 30);  
+
+        
+        ctx.beginPath();
+        ctx.arc(40, 270, 25, 0, Math.PI * 2); 
+        ctx.fillStyle = 'black';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(380, 270, 25, 0, Math.PI * 2); 
+        ctx.fill();
+
+   
+        ctx.beginPath();
+        ctx.arc(40, 270, 10, 0, Math.PI * 2);  
+        ctx.fillStyle = 'pink';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(380, 270, 10, 0, Math.PI * 2); 
+        ctx.fill();
+    </script>
+</body>
+</html>

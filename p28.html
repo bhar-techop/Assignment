@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Conversion</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw main circle (face)
+        ctx.beginPath();
+        ctx.arc(100, 100, 60, 0, Math.PI * 2);
+        ctx.fillStyle = '#d2b48c';
+        ctx.fill();
+        ctx.closePath();
+
+        // Draw eyes
+        ctx.beginPath();
+        ctx.arc(60, 40, 20, 0, Math.PI * 2);
+        ctx.fillStyle = '#d2b48c';
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(140, 40, 20, 0, Math.PI * 2); 
+        ctx.fillStyle = '#d2b48c';
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(60, 40, 10, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(140, 40, 10, 0, Math.PI * 2); 
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+       
+        ctx.beginPath();
+        ctx.arc(80, 90, 15, 0, Math.PI * 2); 
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(120, 90, 15, 0, Math.PI * 2); 
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+        
+        ctx.beginPath();
+        ctx.arc(80, 90, 7, 0, Math.PI * 2); 
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(120, 90, 7, 0, Math.PI * 2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.closePath();
+
+        
+        ctx.beginPath();
+        ctx.arc(100, 120, 10, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+
+      
+        ctx.beginPath();
+        ctx.ellipse(100, 145, 30, 15, 0, 0, Math.PI * 2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = 'black';
+        ctx.stroke();
+        ctx.closePath();
+
+       
+        ctx.beginPath();
+        ctx.arc(100, 240, 80, 0, Math.PI * 2);
+        ctx.fillStyle = '#d2b48c';
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(100, 240, 60, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.closePath();
+    </script>
+</body>
+</html>
